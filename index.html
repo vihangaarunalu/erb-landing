@@ -18,10 +18,12 @@
     <section class="bg-white rounded-lg shadow-md p-6">
       <h2 class="text-xl font-semibold mb-4">Get Early Access</h2>
       <p class="mb-4">Be the first to try Elite Resume Booster. Upload your resume and job description, and let AI do the rest.</p>
-      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-4">
-        <input type="email" name="email" placeholder="Enter your email" required class="w-full p-2 border border-gray-300 rounded">
-        <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Join Waitlist</button>
-      </form>
+     <form name="waitlist-form" method="POST" data-netlify="true">
+  <label for="email">Enter your email</label>
+  <input type="email" id="email" name="email" required />
+  <button type="submit">Join Waitlist</button>
+</form>
+
     </section>
 
     <section class="mt-10">
@@ -38,5 +40,3 @@
   <footer class="text-center mt-10 p-4 text-sm text-gray-500">
     &copy; 2025 Elite Resume Booster. All rights reserved.
   </footer>
-</body>
-</html>
